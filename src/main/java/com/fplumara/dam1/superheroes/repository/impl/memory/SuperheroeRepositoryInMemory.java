@@ -2,16 +2,21 @@ package com.fplumara.dam1.superheroes.repository.impl.memory;
 
 import com.fplumara.dam1.superheroes.model.Superheroe;
 import com.fplumara.dam1.superheroes.repository.SuperheroeRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+@Repository
 public class SuperheroeRepositoryInMemory implements SuperheroeRepository {
 
     Map<String, Superheroe> superheroeMap = new HashMap<>();
 
+    public Map getMap(){
+        return superheroeMap;
+    }
 
     @Override
     public void save(Superheroe superheroe) {
