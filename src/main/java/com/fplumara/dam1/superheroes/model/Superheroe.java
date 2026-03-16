@@ -8,10 +8,6 @@ public class Superheroe {
     private Franquicia franquicia;
     private Integer anioDebut;
 
-
-
-
-
     public Superheroe(String id, String nombre, String apodo, Franquicia franquicia, Integer anioDebut) {
         this.id = id;
         this.nombre = nombre;
@@ -19,7 +15,6 @@ public class Superheroe {
         this.franquicia = franquicia;
         this.anioDebut = anioDebut;
     }
-
 
     public String getId() {
         return id;
